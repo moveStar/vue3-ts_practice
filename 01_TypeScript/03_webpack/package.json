@@ -1,0 +1,27 @@
+{
+  "name": "03_webpack",
+  "version": "1.0.0",
+  "description": "npm i -D typescript \r npm i -D webpack webpack-cli  // 编译webpack@4.41.5  webpack-cli@3.3.10\r npm i -D webpack-dev-server  // 启动开发服务器  webpack-dev-server@3.10.2  \r npm i -D html-webpack-plugin clean-webpack-plugin   // html-webpack-plugin 对html内容进行打包   clean-webpack-plugin清除之前打包的js文件\r npm i -D ts-loader   // ts-loader 编译ts文件\r npm i -D cross-env   // 运行跨平台设置和使用环境变量的脚本",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
