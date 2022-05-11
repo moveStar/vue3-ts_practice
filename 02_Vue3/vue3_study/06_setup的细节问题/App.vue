@@ -1,7 +1,7 @@
 <template>
   <h2>App父级组件</h2>
-  <h3>msg{{msg}}</h3>
-  <button @click="msg+= '==='">更新数据</button>
+  <h3>msg：{{msg}}</h3>
+  <button @click="msg+='==='">更新数据</button>
   <hr>
   <ChildComm :msg = "msg" msg2="真香" @xxx='xxx'/>
 </template>
@@ -17,10 +17,10 @@ export default defineComponent({
   },
 
   setup() {
-    // 定义一个Ref类型的数据
     function xxx(txt: string) {
       msg.value += '==='+txt
     } 
+    // 定义一个Ref类型的数据
     const msg = ref('what are you doing?')
     return {
       msg,

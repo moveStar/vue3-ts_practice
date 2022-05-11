@@ -39,10 +39,9 @@ export default defineComponent({
     // console.log('context', context.attrs.msg2);
     // console.log(context.emit);
 
-     console.log('context', attrs.msg2);
-      console.log(emit);
-    
-    
+    console.log('attrs', attrs.msg2);
+    console.log(emit);
+
     console.log('====================');
     
     console.log('setup执行了')
@@ -57,7 +56,7 @@ export default defineComponent({
     return {
       showMsg1,
       emitXxx
-      // setup中一般都是返回一个对象，对象中的属性和方法都可以在html末班中直接使用
+      // setup中一般都是返回一个对象，对象中的属性和方法都可以在html模板中直接使用
     }
   },
   // data() {
